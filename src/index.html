@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BMW Application</title>
+    <!-- <script type="script" src="../polyfills/custom-elements.shim.js"></script> -->
+    <script>
+        // hide body to prevent FOUC
+        // document.body.style.opacity = 0;
+        window.addEventListener('WebComponentsReady', function() {
+          // show body now that everything is ready
+          // document.body.style.opacity = 1;
+          console.log('web components are ready to be used!!!');
+        });
+      </script>
+      <link rel="stylesheet" type="text/css" href="./css/main.css">
+      <script type="text/javascript" src="../polyfills/native-shim.js"></script>
+      <script type="text/javascript" src="../polyfills/webcomponents-bundle.js"></script>
+      <!-- <script type="script" src="../polyfills/custom-elements.min.js"></script> -->
+      <!-- <script type="text/javascript" src="../src/core/testElement.js"></script> -->
+</head>
+<body>
+    <custom-core-element></custom-core-element>
+</body>
+</html>
